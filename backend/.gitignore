@@ -1,0 +1,16 @@
+# Ambiente virtual
+venv/
+__pycache__/
+*.py[cod]
+*.sqlite3
+*.log
+
+# Arquivos do VSCode
+.vscode/
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# Configurações de banco 
+.env
