@@ -1,0 +1,19 @@
+<div class="container">
+  <h2>Clientes Cadastrados</h2>
+
+  <div *ngIf="clientes.length === 0">
+    <p>Nenhum cliente encontrado.</p>
+  </div>
+
+  <ul class="cliente-lista">
+    <li *ngFor="let cliente of clientes" class="cliente-card">
+      <p><strong>ID:</strong> {{ cliente.ID_Cliente }}</p>
+      <p><strong>Nome:</strong> {{ cliente.nome }}</p>
+      <p><strong>CNH:</strong> {{ cliente.CNH }}</p>
+      <p><strong>CPF:</strong> {{ cliente.CPF }}</p>
+
+      <button (click)="DeleteClient(cliente.ID_Cliente)">Excluir</button>
+    </li>
+  </ul>
+</div>
+

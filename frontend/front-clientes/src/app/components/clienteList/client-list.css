@@ -1,0 +1,23 @@
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cliente-lista {
+  list-style: none;
+  padding: 0;
+}
+
+.cliente-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: #f8f8f8;
+}

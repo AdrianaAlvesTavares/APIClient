@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { ClientList } from './components/clienteList/client-list';
+
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [ClientList],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
