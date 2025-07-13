@@ -20,9 +20,9 @@ export class ClientList implements OnInit {
     });
   }
 
-  DeleteClient(id: number): void {
+  deleteClient(id: number): void {
     if (confirm('Deseja excluir este cliente?')) {
-      this.clienteService.Delete(id).subscribe(() => {
+      this.clienteService.deleteCliente(id).subscribe(() => {
         alert('Cliente excluído!');
         this.ngOnInit();
       });

@@ -18,7 +18,9 @@ export class ClienteService {
   Delete(id: number): Observable<any> {
     return this.http.delete(`${this.baseUrl}${id}/`);
   }
-
+  deleteCliente(id: number) {
+  return this.http.delete(`${this.apiUrl}/${id}/`);
+}
 
 
 }
