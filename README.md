@@ -36,7 +36,7 @@ python3 -m venv venv \\linux
 python -m venv venv \\para windows
 source venv/bin/activate \\para windows
 pip install django
-pip install djangorestfraework
+pip install djangorestframework
 pip install -r requirements.txt \\usei pip freeze > requirements.txt
 python manage.py migrate
 python manage.py runserver
